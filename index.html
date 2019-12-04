@@ -1,6 +1,6 @@
 ---
 layout: default
-title: IONNO Home
+title: IONNO Home...
 ---
 
 <style>
@@ -8,7 +8,7 @@ title: IONNO Home
         display: grid;
     	grid-gap: 7px;
         grid-template-columns: [col1-start] 1fr  [col2-start] 1fr  [col3-start] 1fr [col3-end];
-        grid-template-rows: [row1-start] 200px [row2-start] 250px [row2-end];
+        grid-template-rows: [row1-start] 350px [row2-start] 250px [row2-end];
         background-color: #fff;
         color: #444;
     }
@@ -17,18 +17,20 @@ title: IONNO Home
         color: #fff;
         border-radius: 5px;
         padding: 20px;
-	justify-items: center;
     }
     .a {
         grid-column: col1-start / col3-end;
-        grid-row: row1-start ;}
+        grid-row: row1-start ;
+	justify-content: center;}
     .a > img{
   	object-fit: contain;
   	max-width: 90%;
-	height: auto; }
+	height: auto; 
+	justify-content: center;}
     .b {
         grid-column: col1-start ;
-        grid-row: row2-start;}
+        grid-row: row2-start;
+	justify-content: center;}
     .b > img{
   	object-fit: contain;
 	border-radius: 5%;
@@ -36,7 +38,8 @@ title: IONNO Home
 	height: auto; }
     .c {
         grid-column: col2-start;
-        grid-row: row2-start ;}
+        grid-row: row2-start ;
+	justify-content: center;}
     .c > img{
   	object-fit: contain;
 	border-radius: 5%;
@@ -44,7 +47,8 @@ title: IONNO Home
 	height: auto; }
     .d {
         grid-column: col3-start ;
-        grid-row: row2-start ;}
+        grid-row: row2-start ;
+	justify-content: center;}
     .d > img{
   	object-fit: contain;
 	border-radius: 5%;
