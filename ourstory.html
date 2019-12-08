@@ -1,14 +1,14 @@
 ---
 layout: default
-title: Our Story
+title: Our Story...
 ---
 
 <style>
-	.item1 { grid-area: header; }
-	.item2 { grid-area: menu; }
-	.item3 { grid-area: main; }
-	.item4 { grid-area: right; }
-	.item5 { grid-area: footer; }
+	.item1 { grid-area: WideImg; }
+	.item2 { grid-area: FirstP; }
+	.item3 { grid-area: ImgOne; }
+	.item4 { grid-area: ImgTwo; }
+	.item5 { grid-area: SecondP; }
 
 	.grid-container {
   		display: grid;
@@ -20,6 +20,14 @@ title: Our Story
 		grid-template-rows: 250px 200px 100px;
  		grid-gap: 10px;
   		padding: 10px;
+		
+	.grid-container > div {
+		background-color: rgba(255, 255, 255, 0.8);
+  		text-align: center;
+  		padding: 20px 0;
+  		font-size: 30px;
+	}
+		
 	.item1 > img{
   		object-fit: contain;
   		max-width: 100%;
