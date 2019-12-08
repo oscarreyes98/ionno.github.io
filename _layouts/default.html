@@ -4,71 +4,60 @@
 			<h1><center>IONNO</center></h1>
 			<title>{{ page.title }}</title>
 			<link rel="stylesheet" type="text/css" href="css/main.css">
+			<!--Dropdown menu Settings for "Shop" -->
 			<style>
+				.dropbtn {
+				    background-color: white;
+				    color: black;
+				    padding: 0px;
+				    font-size: 14px;
+				    border: none;
+				}
 
-.dropbtn {
-    background-color: white;
-    color: black;
-    padding: 0px;
-    font-size: 14px;
-    border: none;
-}
+				.dropdown {
+				    position: relative;
+				    display: inline-block;
+				}
 
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
+				.dropdown-content {
+				    display: none;
+				    position: absolute;
+				    background-color: lightgrey;
+				    min-width: 200px;
+				    z-index: 1;
+				}
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: lightgrey;
-    min-width: 200px;
-    z-index: 1;
-}
+				.dropdown-content a {
+				    color: black;
+				    padding: 12px 16px;
+				    text-decoration: none;
+				    display: block;
+				}
 
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
+				.dropdown-content a:hover {background-color: white;}
+				.dropdown:hover .dropdown-content {display: block;}
+				.dropdown:hover .dropbtn {background-color: grey;}
 
-.dropdown-content a:hover {background-color: white;}
-.dropdown:hover .dropdown-content {display: block;}
-.dropdown:hover .dropbtn {background-color: grey;}
-
-</style>
+				</style>
 		</head>
 		<body>
-			<!--<style>
-				.dropbtn {
-    					background-color: black;
-    					color: white;
-    					padding: 5px;
-    					font-size: 12px;
-    					border: none;
-				}
-			</style> -->
 			<nav>
 	    		<ul>
 				<div style="text-align:right">
 				<div class="ec-cart-widget"></div>
 				</div>
-	        		<li><a href="index.html">Home</a></li>
-		        	<li><a href="shop.html">Shop</a></li>
-	        		<li><a href="ourstory.html">Our Story</a></li>
+	        		<li><a href="index.html">LOOKBOOK</a></li>
 	        		<div class="dropdown">
-<button class="dropbtn">Shop</button>
-<div class="dropdown-content">
+					<button class="dropbtn">Shop</button>
+					<div class="dropdown-content">
+						<a href="https://www.google.com">Clothing</a>
+						<a href="https://www.facebook.com">Shoes</a>
+						<a href="https://www.youtube.com">Bags</a>
+						<a href="https://www.youtube.com">Accessories</a>
 
-<a href="https://www.google.com">Clothing</a>
-<a href="https://www.facebook.com">Shoes</a>
-<a href="https://www.youtube.com">Bags</a>
-<a href="https://www.youtube.com">Accessories</a>
-
-</div>
-</div>
+					</div>
+				</div>
+	        		<li><a href="ourstory.html">OUR STORY</a></li>
 	    		</ul>
 			<div data-fixed="TRUE" 
 			data-fixed-position="TOP_RIGHT">
