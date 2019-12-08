@@ -1,0 +1,49 @@
+---
+layout: default
+title: Shoes
+---
+<div class="blurb">
+	<h1><center>Shoes</center></h1>
+	<p>A selection of shoes</p>
+</div><!-- /.blurb -->
+
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 0.5px solid rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+.grid-item > img{
+  object-fit: contain;
+  max-width: 100%;
+  height: auto;
+  align-self: center;
+}
+#img-link{
+  object-fit: contain;
+  max-width: 100%;
+  height: auto;
+  align-self: center;
+}
+</style>
+
+<div class="content">
+	
+	<div class="grid-container">
+	  <div class="grid-item"><img src="Images/shirt1.jpg"><br>Top 1</div>
+	  <div class="grid-item"><img src="Images/shirt2.jpg"><br>Top 2</div>
+	  <div class="grid-item"><img src="Images/shirt3.jpg"><br>Top 3</div>
+	  <div class="grid-item"><img src="Images/shirt4.jpg"><br>Top 4</div>
+	  <div class="grid-item"><img src="Images/shirt5.jpg"><br>Top 5</div>
+	  <div class="grid-item"><img src="Images/shirt6.jpg"><br>Top 6</div>
+	  <div class="grid-item"><img src="Images/shirt7.jpg"><br>Top 7</div>
+	</div>
+	
+</div><!-- /.content -->
