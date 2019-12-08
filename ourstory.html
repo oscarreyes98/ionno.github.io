@@ -2,54 +2,75 @@
 layout: default
 title: Our Story
 ---
-
 <style>
-	.item1 { grid-area: WideImg; }
-	.item2 { grid-area: FirstP; }
-	.item3 { grid-area: ImgOne; }
-	.item4 { grid-area: ImgTwo; }
-	.item5 { grid-area: SecondP; }
-
-	.grid-container {
-  		display: grid;
-  		grid-template-areas:
-  		'WideImg WideImg WideImg WideImg WideImg WideImg'
-  		'FirstP FirstP FirstP FirstP FirstP FirstP'
-  		'ImgOne ImgOne ImgOne ImgTwo ImgTwo ImgTwo'
-		'SecondP SecondP SecondP SecondP SecondP SecondP';
-		grid-template-rows: 250px 200px 100px 100px;
- 		grid-gap: 10px;
-	  	background-color: #2196F3;
-  		padding: 10px;
-		
-	.grid-container > div {
-		background-color: rgba(255, 255, 255, 0.8);
-  		text-align: center;
-  		padding: 20px 0;
-  		font-size: 30px;
+    .wrapper {
+        display: grid;
+    	grid-gap: 7px;
+        grid-template-columns: [col1-start] 1fr  [col2-start] 1fr  [col3-start] 1fr [col4-start] 1fr [col4-end];
+        grid-template-rows: [row1-start] 300px [row2-start] 300px [row3-start] 300px [row3-end] ;
+        background-color: #fff;
+        color: #444;
+	justify-content: center;  
+    }
+    .box {
+        color: #fff;
+        <!--background-color: #444;-->
+        border-radius: 5px;
+        padding: 20px;
+    }
+    .a {
+        grid-column: col1-start / col4-end;
+        grid-row: row1-start;}
+	
+    .a > img{
+  	object-fit: contain;
+  	max-width: 100%;
+	height: auto; 
+	border-radius: 2px;
+	align-self: center;}
+	
+    .b {
+        grid-column: col1-start / col3-start;
+        grid-row: row2-start;
 	}
-		
-	.a > img{
-  		object-fit: contain;
-  		max-width: 100%;
-		height: auto; 
-		border-radius: 2px;
-		align-self: center;
-	}
-}
-
+	
+    .c {
+        grid-column: col3-start / col4-end;
+        grid-row: row2-start ;}
+    .c > img {
+  	object-fit: contain;
+  	max-width: 100%;
+	height: auto; 
+	border-radius: 5px;
+	align-self: center;}
+	
+    .d {
+        grid-column: col4-start ;
+        grid-row: row3-start ;}
+	
+    .d > img{
+  	object-fit: contain;
+  	max-width: 100%;
+	height: auto; 
+	border-radius: 5px;
+	align-self: center;}
+    
 </style>
 
 <div class="content">
 	<h1 style="font-size: 2em; font-family:'Helvetica', 'Arial', 'Sans-Serif';"><center>Our Story</center></h1>
 </div>
 
-<div class="grid-container">
-  	<div class="item1 a"><img src="Images/LondonSkyline.jpg" alt="London Skyline"></div>
-  	<div class="item2">FirstP</div>
-  	<div class="item3">ImgOne</div>  
-  	<div class="item4">ImgTwo</div>
-	<div class="item5">SecondP</div>
+
+<div class="blurb">
+	
+	<div class="wrapper">
+  	  <div class="box a"><img src="Images/homep1.jpg" alt="Several shirts hanging on rack."></div>
+  	  <div class="box b"><img src="Images/homep2.jpg" alt="Red jumper."></div>
+  	  <div class="box c"><img src="Images/homep3.jpg" alt="Black Nike sneaker."></div>
+	  <div class="box d"><img src="Images/homep4.jpg" alt="Brown Leather Jacket"></div>
+	</div>
+	
 </div>
 	
 	
