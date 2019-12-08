@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Our Story
+title: Our Story...
 ---
 <style>
     .wrapper {
@@ -30,19 +30,13 @@ title: Our Story
 	align-self: center;}
 	
     .b {
-        grid-column: col1-start / col3-start;
+        grid-column: col1-start / col3-end;
         grid-row: row2-start;
 	}
-    .b > img {
-  	object-fit: contain;
-  	max-width: 100%;
-	height: auto; 
-	border-radius: 5px;
-	align-self: center;}
 	
     .c {
-        grid-column: col3-start / col4-end;
-        grid-row: row2-start ;}
+        grid-column: col1-start / col3-start;
+        grid-row: row3-start ;}
     .c > img {
   	object-fit: contain;
   	max-width: 100%;
@@ -51,7 +45,7 @@ title: Our Story
 	align-self: center;}
 	
     .d {
-        grid-column: col1-start / col4-end ;
+        grid-column: col3-start / col4-end ;
         grid-row: row3-start ;}
 	
     .d > img{
@@ -72,7 +66,10 @@ title: Our Story
 	
 	<div class="wrapper">
   	  <div class="box a"><img src="Images/LondonSkyline.jpg" alt="London Skyline"></div>
-  	  <div class="box b"><img src="Images/homep2.jpg" alt="Red jumper."></div>
+  	  <div class="box b">
+		  <p>Conceived back in 2003 in the humble surroundings of the East End of London, the aim was to 
+		create a British streetwear brand that could stand with the best the United States had to offer.</p>
+	  </div>
   	  <div class="box c"><img src="Images/homep3.jpg" alt="Black Nike sneaker."></div>
 	  <div class="box d"><img src="Images/homep4.jpg" alt="Brown Leather Jacket"></div>
 	</div>
