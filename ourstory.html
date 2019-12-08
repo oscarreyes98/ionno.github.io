@@ -1,23 +1,38 @@
 ---
 layout: default
-title: Our Story...
+title: Our Story
 ---
 
 <style>
-	.wideImg img {
-		height: auto;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-	}	
+	.item1 { grid-area: header; }
+	.item2 { grid-area: menu; }
+	.item3 { grid-area: main; }
+	.item4 { grid-area: right; }
+	.item5 { grid-area: footer; }
+
+	.grid-container {
+  		display: grid;
+  		grid-template-areas:
+  		'WideImg WideImg WideImg WideImg WideImg WideImg'
+  		'FirstP FirstP FirstP FirstP FirstP FirstP'
+  		'ImgOne ImgOne ImgOne ImgTwo ImgTwo ImgTwo'
+		'SecondP SecondP SecondP SecondP SecondP SecondP';
+ 		grid-gap: 10px;
+  		padding: 10px;
+}
+
 </style>
 
 <div class="content">
 	<h1 style="font-size: 2em; font-family:'Helvetica', 'Arial', 'Sans-Serif';"><center>Our Story</center></h1>
-</div>
-
-<div class="wideImg">
-	<img src="Images/LondonSkyline.jpg" alt="London Skyline" />
+	
+	<div class="grid-container">
+  		<div class="item1"><img src="Images/LondonSkyline.jpg" alt="London Skyline"></div>
+  		<div class="item2">FirstP</div>
+  		<div class="item3">ImgOne</div>  
+  		<div class="item4">ImgTwo</div>
+		<div class="item5">SecondP</div>
+	</div>
 </div>
 	
 	
